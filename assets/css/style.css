@@ -214,3 +214,52 @@ body {
     max-width: 100%;
   }
 }
+
+/**********************************************************************/
+/* Footer section */
+footer {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+}
+
+footer hr {
+  margin: 0;
+  padding: 0;
+}
+
+footer a.text-reset {
+  color: var(--bs-warning);
+}
+
+footer a.text-reset:hover {
+  color: var(--bs-light);
+  text-decoration: none;
+}
+
+footer .fw-bold {
+  color: var(--bs-warning);
+}
+
+footer i {
+  color: var(--bs-warning);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-social-content {
+  font-size: 1.5rem;
+}
+
+.copyright {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+}
+
+@media only screen and (max-width: 770px) {
+  .contact {
+    width: 100%;
+    text-align: center;
+  }
+}
