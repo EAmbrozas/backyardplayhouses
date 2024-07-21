@@ -386,9 +386,6 @@ footer a {
   transition: transform 0.3s ease;
 }
 
-.playhouse-card {
-  height: 640px;
-}
 
 .card:hover {
   transform: scale(1.05);
