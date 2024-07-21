@@ -365,7 +365,10 @@ footer a {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  height: 580px;
+}
+
+.playhouse-card {
+  height: 640px;
 }
 
 .card:hover {
@@ -474,4 +477,15 @@ footer a {
   left: 0;
   font-size: 1.25rem;
   line-height: 1;
+}
+
+/**********************************************************************/
+/* Testimonials section */
+#testimonials small {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.rating {
+  color: var(--bs-warning);
 }
