@@ -338,3 +338,134 @@ footer a {
     text-align: center;
   }
 }
+
+/**********************************************************************/
+/* Playhouses section */
+#playhouses {
+  background-color: #f9f9f9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#playhouses h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 580px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Carousel Styles */
+.carousel-item {
+  padding: 0 1rem;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-inner .row {
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .carousel-item {
+      padding: 0;
+  }
+
+  .card {
+      margin-bottom: 1rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 7%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+      padding: 0;
+  }
+
+  .carousel-inner .row {
+      flex-direction: column;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 10%;
+  }
+}
+
+/* Playhouse Features List Styles */
+.playhouse-features {
+  list-style-type: none; /* Default disc bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.playhouse-features li {
+  font-size: 1rem;
+  color: #333; /* Dark text for better readability */
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.playhouse-features li::before {
+  content: "\2022"; /* Unicode for bullet point */
+  color: var(--bs-warning); /* Color for bullet */
+  position: absolute;
+  left: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
