@@ -176,11 +176,20 @@ body {
   width: 60%;
 }
 
-.right-side {
-  width: 40%;
+.right-side,
+.right-side-small {
   background-image: url('../images/playhouse-1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center right;
+}
+
+.right-side {
+  width: 40%;
+}
+
+.right-side-small {
+  width: 100%;
+  height: 400px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -197,7 +206,20 @@ body {
 
   .right-side {
     width: 50%;
+  }
+}
 
+@media only screen and (max-width: 995px) {
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    width: 50%;
+  }
+
+  .right-side-small {
+    height: 300px;
   }
 }
 
@@ -206,14 +228,23 @@ body {
     width: 100%;
   }
 
-  .right-side {
-    display: none;
-
-  }
   .feature {
     max-width: 100%;
   }
+
+  .right-side-small {
+    height: 250px;
+  }
 }
+
+
+@media only screen and (max-width: 540px) {
+  .right-side-small {
+    height: 150px;
+  }
+}
+
+
 
 /**********************************************************************/
 /* Footer section */
