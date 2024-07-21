@@ -353,6 +353,12 @@ footer a {
   margin-bottom: 2rem;
 }
 
+#playhouses p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
 .card {
   border: none;
   border-radius: 0.5rem;
