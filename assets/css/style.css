@@ -244,6 +244,45 @@ body {
   }
 }
 
+/**********************************************************************/
+/* How we work section */
+#how-we-work {
+  background-color: white;
+}
+
+.process-step-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.process-step {
+  text-align: center;
+  width: 280px;
+  padding: 20px 0;
+  box-shadow: 2px 2px 20px rgb(243, 242, 242);
+}
+
+@media only screen and (max-width: 1400px) {
+  .process-step {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #how-we-work .fa-angle-right {
+      transform: rotate(90deg);
+      display: block;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .process-step {
+    width: 100%;
+  }
+}
 
 
 /**********************************************************************/
